@@ -1,6 +1,6 @@
-# mxv-setup
+# MX Vertical: horizontal scroll and workspace swipe on GNOME
 
-Horizontal scrolling and workspace switching for the Logitech MX Vertical on Linux with GNOME. Hold the Forward button (the upper thumb button) and:
+Hold the Forward button (the upper thumb button) on a Logitech MX Vertical and:
 
 - roll the wheel to scroll sideways
 - move the mouse left or right to switch GNOME workspace, like a four-finger swipe on a touchpad
@@ -42,8 +42,8 @@ On Fedora with GNOME and the default workspace shortcuts:
 
 ```sh
 sudo dnf install python3-evdev
-git clone https://github.com/MarcelloStucchi/mxv-setup.git
-cd mxv-setup
+git clone https://github.com/MarcelloStucchi/mx-vertical-gnome-gestures.git
+cd mx-vertical-gnome-gestures
 sudo bash install.sh
 ```
 
@@ -79,7 +79,7 @@ On another distribution or desktop, go step by step:
 
 You can let Claude Code do the checks above. Open it in the cloned folder and paste:
 
-> I have the `mxv-setup` folder with `install.sh`, `mxv-hscroll.py` and `README.md`. I want the setup from the README on THIS machine: while I hold the Forward button of my Logitech MX Vertical, the wheel scrolls horizontally and moving the mouse left or right switches GNOME workspace. Read the README, check this machine's prerequisites (distribution and init system, GNOME on Wayland or X11, the workspace keybindings, the evdev code of the Forward button, and whether Solaar has the button diverted), then adapt and run the installation and explain each step to me.
+> I have the `mx-vertical-gnome-gestures` folder with `install.sh`, `mxv-hscroll.py` and `README.md`. I want the setup from the README on THIS machine: while I hold the Forward button of my Logitech MX Vertical, the wheel scrolls horizontally and moving the mouse left or right switches GNOME workspace. Read the README, check this machine's prerequisites (distribution and init system, GNOME on Wayland or X11, the workspace keybindings, the evdev code of the Forward button, and whether Solaar has the button diverted), then adapt and run the installation and explain each step to me.
 
 ## Configuration
 
