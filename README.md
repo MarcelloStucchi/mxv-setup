@@ -1,6 +1,6 @@
 # mxv-setup
 
-Horizontal scrolling and workspace switching for the Logitech MX Vertical on Linux. Hold the Forward button (the upper thumb button) and:
+Horizontal scrolling and workspace switching for the Logitech MX Vertical on Linux with GNOME. Hold the Forward button (the upper thumb button) and:
 
 - roll the wheel to scroll sideways
 - move the mouse left or right to switch GNOME workspace, like a four-finger swipe on a touchpad
@@ -9,7 +9,7 @@ Let go and the mouse behaves as before. The cursor stays still while you hold Fo
 
 ## Who it is for
 
-The MX Vertical has one vertical wheel, with no tilt and no thumb wheel, so it can't scroll sideways on its own. Logitech's Options+ software doesn't run on Linux. If you use this mouse on Linux and work with wide spreadsheets or long lines of code, or you miss the touchpad's workspace swipe, this daemon gives you both through one button.
+The MX Vertical has one vertical wheel, with no tilt and no thumb wheel, so it can't scroll sideways on its own. Logitech's Options+ software doesn't run on Linux. If you use this mouse on a GNOME desktop and work with wide spreadsheets or long lines of code, or you miss the touchpad's workspace swipe, this daemon gives you both through one button.
 
 Tested on Fedora 44 with GNOME on Wayland and Python 3.14, using GNOME's default horizontal workspaces and its Super+Page Up and Super+Page Down shortcuts. The mouse works through a Logitech Unifying receiver and over Bluetooth. Other distributions and desktops need small adjustments, described in [Installing on a different machine](#installing-on-a-different-machine). Another mouse with a spare button should also work if you change `MXV_DEVICE` and `MXV_MODIFIER`, but that is untested.
 
