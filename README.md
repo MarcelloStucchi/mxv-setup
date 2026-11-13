@@ -44,10 +44,10 @@ On Fedora with GNOME and the default workspace shortcuts:
 sudo dnf install python3-evdev
 git clone https://github.com/MarcelloStucchi/mxv-setup.git
 cd mxv-setup
-pkexec bash install.sh
+sudo bash install.sh
 ```
 
-`sudo bash install.sh` works too. Then hold Forward and try the wheel and a left/right move.
+With pkexec, pass the full path (`pkexec bash "$PWD/install.sh"`), because pkexec starts in root's home folder. Then hold Forward and try the wheel and a left/right move.
 
 The installer makes these changes to your system:
 
@@ -73,7 +73,7 @@ On another distribution or desktop, go step by step:
    gsettings get org.gnome.desktop.wm.keybindings switch-to-workspace-down
    ```
    Pick a combination that is actually bound and write it as python-evdev key names joined by `+`. For example, `<Super>Page_Up` becomes `KEY_LEFTMETA+KEY_PAGEUP`. On another desktop, use its own switch-workspace shortcut.
-5. Run `pkexec bash install.sh`, or do its steps by hand. Then put the values from steps 3 and 4 in `/etc/mxv-hscroll.env` and restart the service.
+5. Run `sudo bash install.sh`, or do its steps by hand. Then put the values from steps 3 and 4 in `/etc/mxv-hscroll.env` and restart the service.
 
 ### With Claude Code
 
